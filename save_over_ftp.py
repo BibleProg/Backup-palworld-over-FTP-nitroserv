@@ -35,10 +35,12 @@ if __name__ == "__main__":
     username   = ""
     password   = ""
     remote_dir = "Palworld/Pal/Saved/SaveGames/"
-    local_dir  = "Palworld/Pal/Saved/SaveGames/"
+    local_dir  = str(round(time.time())) + "Palworld/Pal/Saved/SaveGames/"
  
     print("connexion....")
     ftp = ftplib.FTP(mysite, username, password)
     print("connected !")
 
     recursive_download(ftp, local_dir,remote_dir)
+
+    input("Press enter...")
