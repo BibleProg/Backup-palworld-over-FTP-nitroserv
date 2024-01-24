@@ -48,5 +48,3 @@ if __name__ == "__main__":
         input(e)
     else:
         input("Press enter...")
-
-    input("Press enter...")
