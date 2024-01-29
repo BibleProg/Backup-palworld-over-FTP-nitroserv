@@ -64,7 +64,7 @@ if __name__ == "__main__":
 
 
     try:
-        get_conf("nitroserv.config")
+        get_conf("ftp.config")
         local_dir  = "backups/" + str(round(time.time())) + remote_dir
         
         print("connexion....")
