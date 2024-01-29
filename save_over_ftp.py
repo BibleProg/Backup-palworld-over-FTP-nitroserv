@@ -60,9 +60,6 @@ def get_conf(file):
 
 if __name__ == "__main__":
 
-
-
-
     try:
         get_conf("ftp.config")
         local_dir  = "backups/" + str(round(time.time())) + remote_dir
